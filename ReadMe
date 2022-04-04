@@ -1,5 +1,5 @@
-TRUPHONE BACKEND
+ZYTE BACKEND
 
 EXECUTION MODE
 1- Run  by command line using the mvn test command on the path of the project
-2- Run by junit clicking on ApiTest.Java and execute by junit
+2- Run by junit clicking on ZyteTest.Java and execute by junit

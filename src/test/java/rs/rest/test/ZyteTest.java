@@ -22,7 +22,7 @@ public class ZyteTest extends BaseTest {
 	@Test
 	public void mustinsertAnUser() {
 		Map<String, Object> params = new HashMap<String, Object>();
-		params.put("name", "ssss");
+		params.put("name", "Ryan");
 		RestAssured.given()
 		.log().all()
 		.body(params)
@@ -31,7 +31,7 @@ public class ZyteTest extends BaseTest {
 		.then()
 			.log().all()
 			.statusCode(201)
-			.body("name", Matchers.is("ssss"));
+			.body("name", Matchers.is("Ryan"));
 		
 	}
 	
@@ -108,6 +108,7 @@ public class ZyteTest extends BaseTest {
 			.log().all()
 			.statusCode(200)
 			.extract().path("");
+		System.out.println(names);
 		Assert.assertThat(names, notNullValue());
 		
 		
