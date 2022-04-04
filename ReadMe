@@ -1,5 +1,19 @@
 ZYTE BACKEND
 
+PREREQUISITES
+1- Clone the following project https://github.com/typicode/json-server.git
+2- Create db.jason file in the project root of the previous step, inserting the following body into it:
+{
+    "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profiles": [{"id": 1, "name": "typicode" }]
+}
+3- At the command prompt, start the database through the command json-server --watch db.json
+
 EXECUTION MODE
 1- Run  by command line using the mvn test command on the path of the project
 2- Run by junit clicking on ZyteTest.Java and execute by junit
